@@ -1,0 +1,9 @@
+[Unit]
+Description=SPYServer rtl-sdr server
+
+[Service]
+ExecStart=/usr/local/bin/spyserver /etc/spyserver/spyserver.config
+
+[Install]
+Alias=spyserver
+WantedBy=multi-user.target
